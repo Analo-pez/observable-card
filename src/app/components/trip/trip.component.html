@@ -1,0 +1,37 @@
+<aside class="trip">
+    <div class="trip__route">
+        <div class="trip__route--icons">
+            <i class="fas fa-check-circle animate__flip"></i>
+            <span class="line"></span>
+            <i class="fas fa-map-marker-alt animate__flip"></i>
+        </div>
+        <div class="trip__route--address">
+            <div>
+                <span>{{ start.city }}</span>
+                <p>{{ start.street }}</p>
+            </div>
+            <div>
+                <span>{{ finish.city }}</span>
+                <p>{{ finish.street }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="trip__data">
+        <div class="trip__data--distance">
+            <span>{{ trip.distance }}</span>
+            <p>distance</p>
+        </div>
+        <div class="trip__data--time">
+            <span>{{ trip.time }}</span>
+            <p>time</p>
+        </div>
+        <div class="trip__data--price">
+            <span>{{ trip.price }}</span>
+            <p>price</p>
+        </div>
+        <div class="trip__data--energy">
+            <span>{{ trip.energy }}</span>
+            <p>energy</p>
+        </div>
+    </div>
+</aside>
