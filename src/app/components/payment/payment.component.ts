@@ -1,30 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+// import { Component, OnInit } from '@angular/core';
 
-@Component({
-  selector: 'app-payment',
-  templateUrl: './payment.component.html',
-  styleUrls: ['./payment.component.scss']
-})
-export class PaymentComponent implements OnInit {
+// @Component({
+//   selector: 'app-payment',
+//   templateUrl: './payment.component.html',
+//   styleUrls: ['./payment.component.scss']
+// })
+// export class PaymentComponent implements OnInit {
 
-  show:boolean= true;
+//   show:boolean= true;
 
-  action="Hide";
+//   action="Hide";
 
-  constructor() { }
+//   constructor() { }
 
-  hide=()=>{
-    if(this.show===true ){
+//   hide=()=>{
+//     if(this.show===true ){
 
-      this.show=false;
-      this.action="Show"
-    } else if (this.show===false){
-      this.show=true;
-      this.action="Hide"
-    }
-  }
+//       this.show=false;
+//       this.action="Show"
+//     } else if (this.show===false){
+//       this.show=true;
+//       this.action="Hide"
+//     }
+//   }
 
-  ngOnInit(): void {
-  }
+//   ngOnInit(): void {
+//   }
 
-}
+// }
