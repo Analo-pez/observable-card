@@ -27,7 +27,12 @@
     &__title {
         text-transform: uppercase;
         color: grey;
-        font-size: 11px;
+        @media (min-width: 320px) {
+            font-size: 8px;
+        }
+        @media (min-width: 400px) {
+            font-size: 10px;
+        }
         @media (min-width: 768px) {
             font-size: 16px;
         }
@@ -38,24 +43,29 @@
         &--user {
             display: flex;
             flex-direction: column;
-            font-size: 10px;
+            @media (min-width: 320px) {
+                font-size: 8px;
+            }
+            @media (min-width: 400px) {
+                font-size: 10px;
+            }
             @media (min-width: 768px) {
+                font-size: 14px;
+            }
+            @media (min-width: 1000px) {
                 font-size: 16px;
-                p {
-                    margin: 0px;
-                }
             }
         }
         &--img {
-            border: 1px solid black;
+            // border: 1px solid black;
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            margin-right: 15px;
-            // background-image: url('../../images/perfil.jpg');
-            // background-repeat: no-repeat;
-            // background-position: center;
-            // background-size: cover;
+            margin-right: 8px;
+            background-image: url('../../images/perfil.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             @media (min-width: 768px) {
                 width: 50px;
                 height: 50px;
@@ -65,17 +75,26 @@
     &__data {
         display: flex;
         flex-direction: column;
-        font-size: 10px;
         gap: 5px;
+        @media (min-width: 320px) {
+            font-size: 8px;
+        }
+        @media (min-width: 400px) {
+            font-size: 10px;
+        }
         @media (min-width: 768px) {
-            gap: 15px;
+            font-size: 14px;
+        }
+        @media (min-width: 1000px) {
             font-size: 16px;
         }
         p {
             text-transform: uppercase;
             color: grey;
             margin: 0;
-            font-size: 10px;
+            @media (min-width: 1000px) {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -97,21 +116,16 @@
         }
     }
     &__method {
-        padding: 0px 30px 30px 30px;
+        padding: 0px 30px 30px 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        @media (min-width: 768px) {
-            gap: 20px
+        @media (min-width: 400px) {
+            padding: 0px 30px 30px 30px;
         }
-        i {
-            font-size: 55px;
-            @media (min-width: 768px) {
-                font-size: 80px;
-            }
-            @media (min-width: 1000px) {
-                font-size: 90px;
-            }
+        @media (min-width: 768px) {
+            gap: 20px;
+            padding: 0px 30px 30px 30px;
         }
     }
 }
@@ -151,9 +165,11 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            font-weight: bold;
             p {
                 text-transform: capitalize;
                 color: grey;
+                font-weight: normal
             }
         }
     }
@@ -162,9 +178,11 @@
         flex-direction: row;
         justify-content: space-between;
         padding-top: 30px;
+        font-weight: bold;
         p {
             text-transform: capitalize;
             color: grey;
+            font-weight: normal
         }
     }
 }
@@ -210,4 +228,54 @@
 .wrap {
     max-width: 1280px;
     width: 100%;
+}
+
+.divImg {
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    @media (min-width: 320px) {
+        width: 60px;
+        height: 40px;
+    }
+    @media (min-width: 400px) {
+        width: 70px;
+        height: 45px;
+    }
+    @media (min-width: 768px) {
+        width: 110px;
+        height: 70px;
+    }
+    @media (min-width: 1000px) {
+        width: 140px;
+        height: 80px;
+    }
+}
+
+.divVisa {
+    background-image: url('../../images/visa1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.divPaypal {
+    background-image: url('../../images/paypal.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: blue;
+}
+
+.divPay {
+    background-image: url('../../images/payApple.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.divMaster {
+    background-image: url('../../images/masterCard.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
