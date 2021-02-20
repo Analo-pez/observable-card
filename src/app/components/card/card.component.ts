@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { DataService } from '../../services/data.service';
-import { AddressService } from '../../services/address.service';
+import { DataService } from '../../services/data.service';
 
 
 @Component({
@@ -17,7 +16,7 @@ export class CardComponent implements OnInit {
   action="Hide";
 
  
-  constructor(private data:AddressService,
+  constructor(private data:DataService,
     ) { }
 
   ngOnInit(): void {
